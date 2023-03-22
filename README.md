@@ -28,9 +28,12 @@ For any epoch the network is trained with 60000 records and tested with 10000 re
 Commandline parameters:
 
 -e:<epochs>   Epoch count, default 4
- -h:<size>     Size of the hidden layer, default 192, > 10, with NEON use multiple of 16
- -l:<lr>       Learningrate, default 0.107, between > 0 and <= 1
-                                                               
+ 
+-h:<size>     Size of the hidden layer, default 192, > 10, with NEON use multiple of 16
+ 
+-l:<lr>       Learningrate, default 0.107, between > 0 and <= 1
+
+                                                              
 Example:
 
 NN_mnist -h:640 -e:13 -l:.1071
@@ -40,10 +43,17 @@ This is the output of the program with default params (running on a nvidia jetso
 
 me@nano:~/data/mnist$ NN_mnistNeon
 START
+                                                              
 Loading training data ... done
+                                                              
 Loading test data ... done
+                                                              
 Layers: 784, 192, 10 - Records: 60000, 10000, LearnRate: 0.10700, RAM usage 262 MByte
+                                                              
 Training epoch  0 ... 17.28s - Testing ... Hits:  9590, Error rate:  4.10%
+                                                              
 Training epoch  1 ... 17.28s - Testing ... Hits:  9698, Error rate:  3.02%
+                                                              
 Training epoch  2 ... 17.28s - Testing ... Hits:  9740, Error rate:  2.60%
+                                                              
 Training epoch  3 ... 17.28s - Testing ... Hits:  9759, Error rate:  2.41%
