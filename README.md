@@ -28,9 +28,9 @@ For any epoch the network is trained with 60000 records and tested with 10000 re
 Commandline parameters:
 
 -e:<epochs>   Epoch count, default 4
--h:<size>     Size of the hidden layer, default 192, > 10, with NEON use multiple of 16
--l:<lr>       Learningrate, default 0.107, between > 0 and <= 1
-
+ -h:<size>     Size of the hidden layer, default 192, > 10, with NEON use multiple of 16
+ -l:<lr>       Learningrate, default 0.107, between > 0 and <= 1
+                                                               
 Example:
 
 NN_mnist -h:640 -e:13 -l:.1071
