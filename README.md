@@ -19,7 +19,9 @@ To use the NEON routines a ARM aarch64 cpu with 64bit OS is required.
 The makefile offers to generate 3 variants of the program:
 
 NN_mnistNeon  for aarch64 systems with NEON support
+
 NN_mnistA64   for aarch64 systems without NEON support
+
 NN_mnist      for ordinary linux systems
 
 The program expect the data files in the current working directory.
